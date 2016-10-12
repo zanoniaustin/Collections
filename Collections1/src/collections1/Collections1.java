@@ -12,6 +12,8 @@ package collections1;
 import java.util.HashMap;
 import static kiss.API.*;
 import java.util.HashSet;
+import java.util.LinkedList;
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.TreeSet;
@@ -45,7 +47,7 @@ public class Collections1 {
         assert uniqueNames.size() == 4;
         
         try(Close out = outExpect("john smith", EOL, "susan peak", EOL, "john tom", 
-                                    EOL, "John Tom", EOL)){
+                                  EOL, "John Tom", EOL)){
             for (String uniqueName : uniqueNames){
                 println(uniqueName);
             }
@@ -92,6 +94,37 @@ public class Collections1 {
         assert grades.get("Steven") == 'C';
     }
     
-    
-  
+    void testList(){
+        List<String> names = new LinkedList<String>();
+        names.add("Betty");
+        names.add("Steven");
+        names.add("Robert");
+        names.add("Betty");
+        assert names.size() == 4;
+        
+        // HEY! lists actually allows multiply occuring same values
+        
+        try(Close out = outExpect("Betty", EOL, "Steven", EOL, "Robert", EOL, 
+                                  "Betty", EOL)){
+            for(String name : names)
+                println(name);
+        }
+        
+        names.add(3, "John");
+        try(Close out = outExpect("Betty", EOL, "Steven", EOL, "Robert", EOL, 
+                                  "John", EOL, "Betty", EOL)){
+            for(String name : names)
+                println(name);
+        }
+        
+        names.remove("Betty");
+        
+        assert names.size() == 4;
+        
+        try(Close out = outExpect("Steven", EOL, "Robert", EOL, "John", EOL, 
+                                  "Betty", EOL)){
+            for(String name : names)
+                println(name);
+        }
+    }
 }
