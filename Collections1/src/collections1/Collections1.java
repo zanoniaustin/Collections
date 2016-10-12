@@ -12,6 +12,7 @@ package collections1;
 import static kiss.API.*;
 import java.util.HashSet;
 import java.util.Set;
+import java.util.TreeSet;
 
 
 public class Collections1 {
@@ -41,13 +42,32 @@ public class Collections1 {
         uniqueNames.add("john tom");
         assert uniqueNames.size() == 4;
         
-        try(Close out = outExpect("john smith", EOL, "susan peak", EOL, "john tom", EOL, "John Tom", EOL)){
+        try(Close out = outExpect("john smith", EOL, "susan peak", EOL, "john tom", 
+                                    EOL, "John Tom", EOL)){
             for (String uniqueName : uniqueNames){
                 println(uniqueName);
             }
        }
     }
     
-    
+    void testTreeSet(){
+        Set<Integer> numbers = new TreeSet<Integer>();
+        numbers.add(1);
+        numbers.add(1);
+        numbers.add(2);
+        numbers.add(7);
+        numbers.add(0);
+        
+        assert numbers.size() == 4;
+        numbers.add(10);
+        numbers.add(1);
+        numbers.remove(1);
+        assert numbers.size() == 4;
+        
+        try(Close out = outExpect(0, EOL, 2, EOL, 7, EOL, 10, EOL)){
+            for(Integer number : numbers)
+                println(number);
+        }
+    }
     
 }
