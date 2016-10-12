@@ -9,8 +9,10 @@
 */
 package collections1;
 
+import java.util.HashMap;
 import static kiss.API.*;
 import java.util.HashSet;
+import java.util.Map;
 import java.util.Set;
 import java.util.TreeSet;
 
@@ -70,4 +72,26 @@ public class Collections1 {
         }
     }
     
+    void testHashMap(){
+        Map<String, Character> grades = new HashMap<>();
+        grades.put("Betty", 'A');
+        assert grades.size() == 1;
+        grades.put("Betty", 'A');
+        assert (grades.size() == 2) == false;
+        grades.put("Betty", 'B');
+        assert grades.size() == 1;
+        
+        // So I guess that you can't have someone with the same name but different
+        // grade twice.
+        
+        grades.put("Steven", 'C');
+        assert grades.size() == 2;
+        grades.put("Betty G", 'F');
+        assert grades.size() == 3;
+        
+        assert grades.get("Steven") == 'C';
+    }
+    
+    
+  
 }
