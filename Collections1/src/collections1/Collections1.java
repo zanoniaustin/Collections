@@ -93,6 +93,7 @@ public class Collections1 {
         numbers.remove(1);
         assert numbers.size() == 4;
         
+        
         try(Close out = outExpect(0, EOL, 2, EOL, 7, EOL, 10, EOL)){
             for(Integer number : numbers)
                 println(number);
@@ -128,6 +129,8 @@ public class Collections1 {
        
         
         assert grades.get("Steven") == 'C';
+        assert grades.get("Betty") == 'B';
+        assert grades.get("Betty G") == 'F';
     }
     
     void testList(){
