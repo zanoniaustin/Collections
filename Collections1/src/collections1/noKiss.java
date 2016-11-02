@@ -30,6 +30,31 @@ public class noKiss {
         return numbers.size();
     }
     
+    public int HashMap(String name1, Character grade1, String name2, Character grade2,
+            Character grade3) {
+        Map<String, Character> grades;
+        grades = new HashMap<>();
+        grades.put(name1, grade1);
+        grades.put(name1, grade1);
+        grades.put(name2, grade2);
+        grades.put(name1, grade3);
+        grades.put(name2, grade3);
+        return grades.size();
+    }
+    
+    public int LinkedList(String name1, String name2, String name3) {
+        List<String> names;
+        names = new LinkedList<>();
+        names.add(name1);
+        names.add(name1);
+        names.add(name2);
+        names.add(name3);
+        names.add(name1);
+        names.add(name2);
+        names.add(name3);
+        return names.size();
+    }
+    
     
     
     

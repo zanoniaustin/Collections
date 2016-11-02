@@ -60,4 +60,25 @@ public class noKissTest {
         assertEquals(expected, result);
     }
     
+    @Test
+    public void TestHashMap() {
+        System.out.println("Hash Map no repeating names.");
+        char grade1 = 'A', grade2 = 'B', grade3 = 'F';
+        String name1 = "Betty", name2 = "John";
+        noKiss instance = new noKiss();
+        int expected = 2;
+        int result = instance.HashMap(name1, grade1, name2, grade2, grade3);
+        assertEquals(expected, result);
+    }
+    
+    @Test
+    public void TestLinkedList() {
+        System.out.println("Linked List allows repeating names");
+        String name1 = "John", name2 = "Betty", name3 = "Jose";
+        noKiss instance = new noKiss();
+        int expected = 7;
+        int result = instance.LinkedList(name1, name2, name3);
+        assertEquals(expected, result);
+    }
+    
 }
