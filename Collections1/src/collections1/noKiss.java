@@ -10,6 +10,30 @@ import java.util.HashMap;
 
 public class noKiss {
 
+    public int SameNameHashSet(String name){
+        Set<String> Names;
+        Names = new HashSet<>();
+        Names.add(name);
+        Names.add(name);
+        return Names.size();
+    }
+    
+    public int TreeSet(int a, int b, int c, int d) {
+        Set<Integer> numbers;
+        numbers = new TreeSet<>();
+        numbers.add(a);
+        numbers.add(a);
+        numbers.add(b);
+        numbers.add(c);
+        numbers.add(a);
+        numbers.add(d);
+        return numbers.size();
+    }
+    
+    
+    
+    
+    
     public static void main(String[] args) {
         
        

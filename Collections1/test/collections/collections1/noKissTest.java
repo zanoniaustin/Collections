@@ -41,12 +41,23 @@ public class noKissTest {
      * Test of main method, of class noKiss.
      */
     @Test
-    public void testMain() {
-        System.out.println("main");
-        String[] args = null;
-        noKiss.main(args);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+    public void testHashSet() {
+        System.out.println("No repeat names in hash set.");
+        String name = "john smith";
+        noKiss instance = new noKiss();
+        int expected = 1;
+        int result = instance.SameNameHashSet(name);
+        assertEquals(expected, result);
+    }
+    
+    @Test
+    public void TestTreeSet() {
+        System.out.println("Tree set no repeating numebrs.");
+        int a =1, b = 2, c = 7, d = 10;
+        noKiss instance = new noKiss();
+        int expected = 4;
+        int result = instance.TreeSet(a, b, c, d);
+        assertEquals(expected, result);
     }
     
 }
