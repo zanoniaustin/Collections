@@ -1,15 +1,14 @@
 # Collections
 
-[This is assignment number 2, using kiss to create a program messing around with collections]
+[Assignment #2, using kiss to create a program messing around with collections]
 (https://github.com/zanoniaustin/Collections/tree/master/Collections1/src/collections1)
 
 
-[This is assignment number 3, using kiss and doing a lot of testing]
+[Assignment #3, using kiss and doing a lot of testing]
 (https://github.com/zanoniaustin/Collections/tree/Testing/Collections1/src/collections1)
 
-[This is assignment number 4, using previous program and tests without using kiss jar,
-this is the source code file.]
+[Assignment #4, using previous program and tests without using kiss jar, this is the source code file.]
 (https://github.com/zanoniaustin/Collections/tree/noKiss/Collections1/src/collections1)
 
-[This is the link to the test file, for assignment 4.]
+[Assignment #4, junit test file]
 (https://github.com/zanoniaustin/Collections/tree/noKiss/Collections1/test/collections/collections1)
