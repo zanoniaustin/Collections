@@ -23,7 +23,16 @@ public class threads {
         Name susie = new Name("susie", order2);
         Name nathan = new Name("nathan", order4);
         
-       
+        pause(5);
+        john.cooked();
+        
+        Name jessica = new Name("jessica", order3);
+        pause(5);
+        
+        susie.cooked();
+        nathan.cooked();
+        pause(5);
+        jessica.cooked();
         
     }
     
