@@ -12,3 +12,6 @@
 
 [Assignment #4, junit test file]
 (https://github.com/zanoniaustin/Collections/tree/noKiss/Collections1/test/collections/collections1)
+
+[Assignment #5, threading]
+(https://github.com/zanoniaustin/Collections/tree/Threading/Collections1/src/Threading)
