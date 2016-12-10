@@ -6,54 +6,28 @@
 package Final;
 
 import static kiss.API.*;
-import java.awt.*;
+import java.awt.Color;
+import javax.swing.JFrame;
 
-public class Pong extends java.applet.Applet{
+public class Pong extends JFrame{
+   
+    private static final int WIDTH = 700, HEIGHT = 450;
+    private final Board board;
     
-    TextArea ta = null;
-    
-    
-    
-    public void init(){
-        Panel p = new Panel();
-        
-        //setLayout(new BorderLayout());
-        
-        
-        ta = new TextArea();
-        
-        p.add(ta);
-        add("Center", p);
-        p = new Panel();
-        
-        add(new Button("One"));
-        add(new Button("Two"));
-        
-        Choice c = new Choice();
-        c.addItem("one");
-        c.addItem("two");
-        c.addItem("three");
-        
-        p.add(c);
-        add("South", p);
+    public Pong() {
+        setSize(WIDTH, HEIGHT);
+        setBackground(Color.BLACK);
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setVisible(true);
+        board = new Board(this);
+        add(board);
     }
     
-     public boolean action(Event e, String o) {
-         String str = (String)o;
-         ta.appendText(str + "\n");
-         return false;
-     }
-    
-    
-    
+    public Board getBoard() {
+        return board;
+    }
+
     public static void main(String[] args) {
-        Frame f = new Frame("Pong");
-        Pong ex = new Pong();
-        
-        ex.init();
-        
-        f.add("Center", ex);
-        f.pack();
-        f.show();
+        Pong pong = new Pong();
     }
 }
