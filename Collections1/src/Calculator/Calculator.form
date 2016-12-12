@@ -49,7 +49,7 @@
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Component id="btn9" min="-2" pref="47" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="btn14" min="-2" pref="47" max="-2" attributes="0"/>
+                              <Component id="btnAdd" min="-2" pref="47" max="-2" attributes="0"/>
                           </Group>
                           <Group type="103" alignment="1" groupAlignment="0" max="-2" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
@@ -59,21 +59,21 @@
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Component id="btn3" min="-2" pref="47" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="btn11" min="-2" pref="47" max="-2" attributes="0"/>
+                                  <Component id="btnMul" min="-2" pref="47" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
-                                  <Component id="btn10" min="-2" pref="47" max="-2" attributes="0"/>
+                                  <Component id="btnDot" min="-2" pref="47" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Component id="btn0" min="-2" pref="47" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="btn12" min="-2" pref="47" max="-2" attributes="0"/>
+                                  <Component id="btnClr" min="-2" pref="47" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="btn16" min="-2" pref="47" max="-2" attributes="0"/>
+                                  <Component id="btnDiv" min="-2" pref="47" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="1" attributes="0">
-                                  <Component id="btn17" max="32767" attributes="0"/>
+                                  <Component id="btnNeg" max="32767" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="btn18" min="-2" pref="112" max="-2" attributes="0"/>
+                                  <Component id="btnEq" min="-2" pref="112" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <Group type="102" alignment="1" attributes="0">
@@ -83,7 +83,7 @@
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Component id="btn6" min="-2" pref="47" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="btn13" min="-2" pref="47" max="-2" attributes="0"/>
+                              <Component id="btnSub" min="-2" pref="47" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -102,33 +102,33 @@
                   <Component id="btn8" alignment="3" min="-2" pref="44" max="-2" attributes="0"/>
                   <Component id="btn9" alignment="3" min="-2" pref="44" max="-2" attributes="0"/>
                   <Component id="btn7" alignment="3" min="-2" pref="44" max="-2" attributes="0"/>
-                  <Component id="btn14" alignment="3" min="-2" pref="44" max="-2" attributes="0"/>
+                  <Component id="btnAdd" alignment="3" min="-2" pref="44" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="btn4" alignment="3" min="-2" pref="44" max="-2" attributes="0"/>
                   <Component id="btn5" alignment="3" min="-2" pref="44" max="-2" attributes="0"/>
                   <Component id="btn6" alignment="3" min="-2" pref="44" max="-2" attributes="0"/>
-                  <Component id="btn13" alignment="3" min="-2" pref="44" max="-2" attributes="0"/>
+                  <Component id="btnSub" alignment="3" min="-2" pref="44" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="btn1" alignment="3" min="-2" pref="44" max="-2" attributes="0"/>
                   <Component id="btn2" alignment="3" min="-2" pref="44" max="-2" attributes="0"/>
                   <Component id="btn3" alignment="3" min="-2" pref="44" max="-2" attributes="0"/>
-                  <Component id="btn11" alignment="3" min="-2" pref="44" max="-2" attributes="0"/>
+                  <Component id="btnMul" alignment="3" min="-2" pref="44" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="13" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="btn10" alignment="3" min="-2" pref="44" max="-2" attributes="0"/>
+                  <Component id="btnDot" alignment="3" min="-2" pref="44" max="-2" attributes="0"/>
                   <Component id="btn0" alignment="3" min="-2" pref="44" max="-2" attributes="0"/>
-                  <Component id="btn12" alignment="3" min="-2" pref="44" max="-2" attributes="0"/>
-                  <Component id="btn16" alignment="3" min="-2" pref="44" max="-2" attributes="0"/>
+                  <Component id="btnClr" alignment="3" min="-2" pref="44" max="-2" attributes="0"/>
+                  <Component id="btnDiv" alignment="3" min="-2" pref="44" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="btn17" alignment="3" min="-2" pref="44" max="-2" attributes="0"/>
-                  <Component id="btn18" alignment="3" min="-2" pref="44" max="-2" attributes="0"/>
+                  <Component id="btnNeg" alignment="3" min="-2" pref="44" max="-2" attributes="0"/>
+                  <Component id="btnEq" alignment="3" min="-2" pref="44" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="32767" attributes="0"/>
           </Group>
@@ -210,10 +210,13 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn9ActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btn10">
+    <Component class="javax.swing.JButton" name="btnDot">
       <Properties>
         <Property name="text" type="java.lang.String" value="."/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDotActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btn0">
       <Properties>
@@ -223,49 +226,61 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn0ActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btn12">
+    <Component class="javax.swing.JButton" name="btnClr">
       <Properties>
         <Property name="text" type="java.lang.String" value="C"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn12ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnClrActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btn11">
+    <Component class="javax.swing.JButton" name="btnMul">
       <Properties>
         <Property name="text" type="java.lang.String" value="*"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnMulActionPerformed"/>
+      </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btn13">
+    <Component class="javax.swing.JButton" name="btnSub">
       <Properties>
         <Property name="text" type="java.lang.String" value="-"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSubActionPerformed"/>
+      </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btn14">
+    <Component class="javax.swing.JButton" name="btnAdd">
       <Properties>
         <Property name="text" type="java.lang.String" value="+"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn14ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAddActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btn16">
+    <Component class="javax.swing.JButton" name="btnDiv">
       <Properties>
         <Property name="text" type="java.lang.String" value="/"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn16ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDivActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btn17">
+    <Component class="javax.swing.JButton" name="btnNeg">
       <Properties>
         <Property name="text" type="java.lang.String" value="+/-"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnNegActionPerformed"/>
+      </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btn18">
+    <Component class="javax.swing.JButton" name="btnEq">
       <Properties>
         <Property name="text" type="java.lang.String" value="="/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnEqActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>
