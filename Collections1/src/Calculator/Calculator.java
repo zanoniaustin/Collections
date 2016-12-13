@@ -5,13 +5,11 @@
  */
 package Calculator;
 
-/**
- *
- * @author austi
- */
+import static kiss.API.*;
+
 public class Calculator extends javax.swing.JFrame {
 
-    double firstNumber, secondNumber, result;
+    double firstNumber = 0, secondNumber = 0, result;
     String operation;
     /**
      * Creates new form Calculator
@@ -367,11 +365,10 @@ public class Calculator extends javax.swing.JFrame {
         String input;
         input = txtDisplay.getText();
        
-        if (input.charAt(0) == '-'){
+        if (input.charAt(0) == '-')
             input = input.substring(1);
-        } else {
+        else 
             input = "-" + input;
-        }
         
         txtDisplay.setText(input);
     }//GEN-LAST:event_btnNegActionPerformed
@@ -390,20 +387,34 @@ public class Calculator extends javax.swing.JFrame {
 
     private void btnEqActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEqActionPerformed
         secondNumber = Double.parseDouble(txtDisplay.getText());
-        if (operation == "+")
-            result = firstNumber + secondNumber;
-        else if (operation == "-")
-            result = firstNumber - secondNumber;
-        else if (operation == "*")
-            result = firstNumber * secondNumber;
-        else if (operation == "/")
-            result = firstNumber / secondNumber;
-        
         String input;
-        input = Double.toString(result);
-        txtDisplay.setText(input);
+        if (operation == "+"){
+            result = firstNumber + secondNumber;
+            input = Double.toString(result);
+            txtDisplay.setText(input);
+        }
+        else if (operation == "-"){
+            result = firstNumber - secondNumber;
+            input = Double.toString(result);
+            txtDisplay.setText(input);
+        }
+        else if (operation == "*"){
+            result = firstNumber * secondNumber;
+            input = Double.toString(result);
+            txtDisplay.setText(input);
+        }
+        else if (operation == "/"){
+            if (secondNumber != 0){
+                result = firstNumber / secondNumber;
+                input = Double.toString(result);
+                txtDisplay.setText(input);
+            }
+            else
+                txtDisplay.setText("Error");
+        }
     }//GEN-LAST:event_btnEqActionPerformed
 
+    
    
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
@@ -429,6 +440,8 @@ public class Calculator extends javax.swing.JFrame {
         }
         //</editor-fold>
 
+            
+        
         
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
